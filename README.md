@@ -160,5 +160,52 @@ fun main() {
 
 #### Ex 10.
 ```kotlin
+import kotlin.math.sqrt
+import kotlin.math.pow
+
+fun main() {
+    println("Digite o valor de x1")
+    val x1 = readLine()!!.toDouble()
+    
+    println("Digite o valor para y1")
+    val y1 = readLine()!!.toDouble()
+    
+    println("Digite o valor para x2")
+    val x2 = readLine()!!.toDouble()
+    
+    println("Digite o valor para y2")
+    val y2 = readLine()!!.toDouble()
+    
+    val distancia = sqrt((x2 - x1).pow(2) + (y2 - y1).pow(2))
+    
+    println("A distância entre os pontos é $distancia")
+}
+```
+
+#### Ex 11.
+```kotlin
+import kotlin.math.pow
+
+fun main() {
+    println("Digite o valor de A (inteiro e positivo):")
+    val A = readLine()!!.toInt()
+    
+    println("Digite o valor de B (inteiro e positivo):")
+    val B = readLine()!!.toInt()
+    
+    println("Digite o valor de C (inteiro e positivo):")
+    val C = readLine()!!.toInt()
+    
+    val R = (A + B).toDouble().pow(2)
+    val S = (B + C).toDouble().pow(2)
+    
+    val D = (R + S) / 2
+    
+    println("O valor de D é $D")
+}
+```
+
+#### Ex 12.
+```kotlin
 
 ```
