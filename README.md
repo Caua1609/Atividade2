@@ -68,5 +68,43 @@ fun main() {
 
 #### Ex 5.
 ```kotlin
+fun main() {
+    
+    println("Digite o valor da base do triângulo")
+    var base = readLine()!!.toDouble()
+    
+    println("Digite o valor da altura")
+    var altura = readLine()!!.toDouble()
+    
+    var area = (base * altura) / 2
+    println("area : $area")
+}
+```
+
+#### Ex 6.
+```kotlin
+fun main() {
+    print("Digite o peso: ")
+    val peso = readln().toDouble()
+
+    print("Digite a altura: ")
+    val altura = readln().toDouble()
+
+    val imc = peso / (altura * altura)
+
+    if (imc < 18.5) {
+        print("Abaixo do peso")
+    } else if (imc < 24.9) {
+        print("Peso normal")
+    } else if (imc < 29.9) {
+        print("Sobrepeso")
+    } else {
+        print("Obesidade")
+    }
+}
+```
+
+#### Ex 7.
+```kotlin
 
 ```
