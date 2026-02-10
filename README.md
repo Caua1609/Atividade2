@@ -207,5 +207,65 @@ fun main() {
 
 #### Ex 12.
 ```kotlin
+fun main() {
+    print("Digite o custo de fábrica do carro: ")
+    val custoFabrica = readLine()!!.toDouble()
+
+    val percentualDistribuidor = 0.28
+    val percentualImpostos = 0.45
+
+    val custoConsumidor = custoFabrica * (1 + percentualDistribuidor + percentualImpostos)
+
+    println("O custo ao consumidor é: R$ %.2f".format(custoConsumidor))
+
+```
+
+#### Ex 13.
+```kotlin
+fun main() {
+    print("Digite o valor de a: ")
+    val a = readLine()!!.toDouble()
+    print("Digite o valor de b: ")
+    val b = readLine()!!.toDouble()
+    print("Digite o valor de c: ")
+    val c = readLine()!!.toDouble()
+    print("Digite o valor de d: ")
+    val d = readLine()!!.toDouble()
+    print("Digite o valor de e: ")
+    val e = readLine()!!.toDouble()
+    print("Digite o valor de f: ")
+    val f = readLine()!!.toDouble()
+
+    val denominador = a * e - b * d
+
+    if (denominador == 0.0) {
+        println("O sistema não tem solução única.")
+    } else {
+        val x = (c * e - b * f) / denominador
+        val y = (a * f - c * d) / denominador
+
+        println("Valor de x = $x")
+        println("Valor de y = $y")
+    }
+}
+
+```
+
+#### Ex 14.
+```kotlin
+fun main() {
+    
+    println("informe seu salario atual")
+    var salarioAtual = readLine()!!.toDouble()
+    
+    var salarioNovo = salarioAtual * 1.25
+    
+    println("novo salario: $salarioNovo")
+}
+
+```
+
+#### Ex 15.
+```kotlin
 
 ```
