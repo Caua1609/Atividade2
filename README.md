@@ -29,5 +29,27 @@ fun main() {
 
 #### Ex 3.
 ```kotlin
+fun main() {
 
+    println("Digite o primeiro número:")
+    val num1 = readLine()!!.toDouble()
+
+    println("Digite o segundo número:")
+    val num2 = readLine()!!.toDouble()
+
+    val soma = num1 + num2
+    val subtracao = num1 - num2
+    val multiplicacao = num1 * num2
+    val divisao = num1 / num2
+
+    println("Soma: $soma")
+    println("Subtração: $subtracao")
+    println("Multiplicação: $multiplicacao")
+    println("Divisão: $divisao")
+}
+
+```
+
+### Ex 4.
+```kotlin
 ```
