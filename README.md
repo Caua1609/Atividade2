@@ -267,5 +267,101 @@ fun main() {
 
 #### Ex 15.
 ```kotlin
+fun main() {
+    println("Informe o salário atual do funcionário:")
+    val salarioAtual = readLine()!!.toDouble()
+
+    println("Informe o percentual de aumento (%):")
+    val percentualAumento = readLine()!!.toDouble()
+
+    val salarioNovo = salarioAtual * (1 + percentualAumento / 100)
+
+    println("Novo salário: $salarioNovo")
+}
+
+```
+
+#### Ex 16.
+```kotlin
+fun main() {
+    println("Digite seu ano de nascimento:")
+    val anoNascimento = readLine()!!.toInt()
+
+    println("Digite o ano atual:")
+    val anoAtual = readLine()!!.toInt()
+
+    val idadeAnos = anoAtual - anoNascimento
+    val idadeMeses = idadeAnos * 12
+    val idadeSemanas = idadeAnos * 52
+    val idadeDias = idadeAnos * 365 
+
+    println("Idade da pessoa em anos: $idadeAnos")
+    println("Idade da pessoa em meses: $idadeMeses")
+    println("Idade da pessoa em semanas: $idadeSemanas")
+    println("Idade da pessoa em dias (aproximado): $idadeDias")
+}
+
+```
+
+#### Ex 17.
+```kotlin
+   
+fun main() {
+    println("Digite o peso do saco de ração (em kg):")
+    val pesoSacoKg = readLine()!!.toDouble()
+
+    println("Digite a quantidade de ração diária para cada gato (em gramas):")
+    val racaoPorGato = readLine()!!.toDouble()
+
+    val numeroGatos = 2
+    val dias = 5
+
+    val pesoSacoGramas = pesoSacoKg * 1000
+
+    val consumoTotal = racaoPorGato * numeroGatos * dias
+
+    val restante = pesoSacoGramas - consumoTotal
+
+    println("Ração restante após $dias dias: $restante gramas")
+}
+
+```
+
+#### Ex 18.
+```kotlin
+fun main() {
+    println("Digite o valor da variavel A")
+    var variavelA = readLine()!!.toDouble()
+    
+    println("Digite o valor da variavel B")
+    var variavelB = readLine()!!.toDouble()
+    
+    println("Antes da troca: a = $variavelA, b = $variavelB")
+     
+    val temp = variavelA
+    variavelA = variavelB
+    variavelB = temp
+    
+    println("Depois da troca: a = $variavelA, b = $variavelB")
+}
+
+```
+
+#### Ex 19.
+```kotlin
+fun main() {
+    println("Digite o valor do comprimento")
+    var comprimento = readLine()!!.toDouble()
+    
+    println("Digite o valor da altura")
+    var altura = readLine()!!.toDouble()
+    
+    println("Digite o valor da largura")
+    var largura = readLine()!!.toDouble()
+    
+    var volume = comprimento * altura * largura
+    println("volume: $volume")
+    
+}
 
 ```
