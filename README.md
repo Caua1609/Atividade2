@@ -106,5 +106,59 @@ fun main() {
 
 #### Ex 7.
 ```kotlin
+fun main() {
+
+    println("Digite a idade em dias:")
+    val totalDias = readLine()!!.toInt()
+
+    val anos = totalDias / 365
+    val restoAnos = totalDias % 365
+
+    val meses = restoAnos / 30
+    val dias = restoAnos % 30
+
+    println("$anos anos, $meses meses e $dias dias")
+}
+
+```
+
+#### Ex 8.
+```kotlin
+fun main() {
+
+    println("Coloque aqui sua primeira nota")
+    var nota1 = readLine()!!.toDouble()
+    
+    println("Coloque aqui sua segunda nota")
+    var nota2 = readLine()!!.toDouble()
+    
+    println("Coloque aqui sua terceira nota")
+    var nota3 = readLine()!!.toDouble()
+    
+    var media = (nota1 + nota2 + nota3) / 3 
+    println("Media: $media")
+}
+```
+
+#### Ex 9.
+```kotlin
+fun main() {
+
+    println("Digite o tempo do evento em segundos:")
+    val totalSegundos = readLine()!!.toInt()
+
+    val horas = totalSegundos / 3600
+    val restoHoras = totalSegundos % 3600
+
+    val minutos = restoHoras / 60
+    val segundos = restoHoras % 60
+
+    println("$horas horas, $minutos minutos e $segundos segundos")
+}
+
+```
+
+#### Ex 10.
+```kotlin
 
 ```
