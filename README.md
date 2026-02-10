@@ -52,4 +52,21 @@ fun main() {
 
 ### Ex 4.
 ```kotlin
+fun main() {
+    
+    println("Digite o valor do lado")
+    var lado1 = readLine()!!.toDouble()
+    
+    println("Digite o valor do lado")
+    var lado2 = readLine()!!.toDouble()
+    
+    var area = lado1 * lado2
+    
+    println("area: $area")
+}
+```
+
+#### Ex 5.
+```kotlin
+
 ```
