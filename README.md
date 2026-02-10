@@ -365,3 +365,107 @@ fun main() {
 }
 
 ```
+
+#### Ex 20.
+```kotlin
+fun main() {
+    print("Digite o valor de A: ")
+    val a = readLine()!!.toInt()
+
+    print("Digite o valor de B: ")
+    val b = readLine()!!.toInt()
+
+    val resultado = (a - b) * (a - b)
+
+    println("O quadrado da diferença de A em relação a B é: $resultado")
+}
+```
+
+#### Ex 21.
+```kotlin
+fun main() {
+    
+    fun main() {
+    var valor_dolar = 50
+    val cotaçao_dolar = 5.60
+    var converçao_real = valor_dolar * cotaçao_dolar
+
+    println(converçao_real)
+}
+
+```
+
+#### Ex 22.
+```kotlin
+fun main() {
+    
+    println("Insira o primeiro valor inteiro")
+    var valorA = readLine()!!.toDouble()
+    
+    println("Insira o segundo valor inteiro")
+    var valorB = readLine()!!.toDouble()
+    
+    println("Insira o terceiro valor")
+    var valorC = readLine()!!.toDouble()
+    
+    var soma = valorA + valorB + valorC
+    var resultado = soma * soma
+    
+    println("A soma quadrada é: $resultado")
+    
+    
+}
+```
+
+#### Ex 23.
+```kotlin
+fun main() {
+    
+    println("Insira o primeiro valor real")
+    var valorReal1 = readLine()!!.toDouble()
+    
+    println("insira o segundo valor real")
+    var valorReal2 = readLine()!!.toDouble()
+    
+    var soma = valorReal2 + valorReal1
+    var subtracao = valorReal1 - valorReal2
+    var multiplicacao = valorReal1 * valorReal2
+    var divisao = if (valorReal2 != 0.0) valorReal1 / valorReal2 else "Divisão por zero não é permitida"
+    
+    println("Soma: $soma")
+    println("Subtração: $subtracao")
+    println("Multiplicação: $multiplicacao")
+    println("Divisão: $divisao")
+}
+
+```
+
+#### Ex 24.
+```kotlin
+fun main() {
+    
+    println("Digite o valor do raio da esfera:")
+    val raio = readLine()!!.toDouble()
+
+    val pi = 3.14159
+    val volume = (4.0 / 3.0) * pi * (raio * raio * raio)
+
+    println("O volume da esfera é: $volume")
+}
+```
+
+#### Ex 25.
+```kotlin
+fun main() {
+    
+    println("Insira um valor numerico inteiro")
+    var valor = readLine()!!.toDouble()
+    
+    var antecessor = valor - 1
+    var sucessor = valor + 1
+    
+    println("Antecessor: $antecessor")
+    println("Sucessor: $sucessor")
+}
+
+```
